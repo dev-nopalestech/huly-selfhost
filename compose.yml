@@ -113,7 +113,7 @@ services:
   front:
     image: hardcoreeng/front:${HULY_VERSION}
     environment:
-      - SERVER_PORT=8080
+      - SERVER_PORT=8090
       - SERVER_SECRET=${SECRET}
       - LOVE_ENDPOINT=http${SECURE:+s}://${HOST_ADDRESS}/_love
       - ACCOUNTS_URL=http${SECURE:+s}://${HOST_ADDRESS}/_accounts
